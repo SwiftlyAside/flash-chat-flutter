@@ -68,7 +68,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               height: 48.0,
             ),
             RoundedButton(
-              color: Colors.lightBlueAccent,
+              color: Colors.deepPurpleAccent.shade100,
               title: 'Log In',
               onPressed: () {
                 //Go to login screen.
@@ -76,7 +76,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               },
             ),
             RoundedButton(
-              color: Colors.blueAccent,
+              color: Colors.deepPurpleAccent,
               title: 'Register',
               onPressed: () {
                 //Go to registration screen.

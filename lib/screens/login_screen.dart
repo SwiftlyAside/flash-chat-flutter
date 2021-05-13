@@ -30,11 +30,13 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
-                Hero(
-                  tag: 'logo',
-                  child: Container(
-                    height: 200.0,
-                    child: Image.asset('images/logo.png'),
+                Flexible(
+                  child: Hero(
+                    tag: 'logo',
+                    child: Container(
+                      height: 200.0,
+                      child: Image.asset('images/logo.png'),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -69,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 24.0,
                 ),
                 RoundedButton(
-                  color: Colors.lightBlueAccent,
+                  color: Colors.deepPurpleAccent,
                   title: 'Log In',
                   onPressed: () async {
                     final progress = ProgressHUD.of(context);
